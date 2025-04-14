@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCP Foundation - Secure Document Repository</title>
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            background-color: #f0f0f0;
+            color: #000;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        
+        .scp-document {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+        }
+        
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #000;
+            padding-bottom: 10px;
+        }
+        
+        .logo {
+            width: 60px;
+            height: 60px;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            margin-right: 20px;
+            font-size: 14px;
+        }
+        
+        .doc-title {
+            font-size: 24px;
+            margin: 0;
+        }
+        
+        .section-title {
+            background-color: #000;
+            color: #fff;
+            padding: 5px 10px;
+            font-size: 16px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        
+        .scp-entry {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            border-radius: 3px;
+        }
+        
+        .scp-entry:hover {
+            background-color: #f0f0f0;
+            border-color: #999;
+        }
+        
+        .scp-entry h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        
+        .scp-entry p {
+            margin-bottom: 10px;
+        }
+        
+        .scp-entry .object-class {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .safe {
+            background-color: #e8f5e9;
+            color: #388e3c;
+        }
+        
+        .keter {
+            background-color: #ffebee;
+            color: #d32f2f;
+        }
+        
+        .euclid {
+            background-color: #fff3e0;
+            color: #f57c00;
+        }
+        
+        .document-info {
+            font-size: 12px;
+            color: #666;
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px solid #ccc;
+        }
+        
+        a {
+            color: #001f3f;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .warning {
+            background-color: #fff8e1;
+            border-left: 4px solid #ffc107;
+            padding: 10px 15px;
+            margin-bottom: 20px;
+        }
+        
+        .memetic-warning {
+            background-color: #ffebee;
+            border: 2px solid #f44336;
+            padding: 10px 15px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-align: center;
+            color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="scp-document">
+            <div class="header">
+                <div class="logo">SCP</div>
+                <div>
+                    <h1 class="doc-title">SCP Foundation Document Repository</h1>
+                </div>
+            </div>
+            
+            <div class="warning">
+                <strong>NOTICE:</strong> This terminal provides access to classified Foundation documents. Unauthorized access is strictly prohibited. All access is logged and monitored.
+            </div>
+            
+            <div class="section-title">Available Documents</div>
+            
+            <a href="SCP-1870.html">
+                <div class="scp-entry">
+                    <span class="object-class safe">Safe</span>
+                    <h3>SCP-1870: The Temporal Microwave</h3>
+                    <p>A microwave oven with temporal manipulation capabilities, featuring two unique settings that affect the aging process of organic matter.</p>
+                    <p><small>Last updated: 04/14/2025 | Access Level: 2/1870</small></p>
+                </div>
+            </a>
+            
+            <a href="SCP-2953.html">
+                <div class="scp-entry">
+                    <span class="object-class keter">Keter</span>
+                    <h3>SCP-2953: The Schizophrenic Disorder Delusion</h3>
+                    <p><strong>MEMETIC COUNTERMEASURE VERSION</strong> - Document implements cognitive circuit-breaker protocol to prevent transmission.</p>
+                    <p><small>Last updated: 04/14/2025 | Access Level: 3/2953-CB</small></p>
+                </div>
+            </a>
+            
+            <a href="SCP-2953-original.html">
+                <div class="scp-entry memetic-warning">
+                    <span class="object-class keter">Keter</span>
+                    <h3>SCP-2953: The Schizophrenic Disorder Delusion</h3>
+                    <p><strong>WARNING: MEMETIC HAZARD DETECTED</strong> - Standard document format without countermeasures. Special access restrictions in effect.</p>
+                    <p><small>Last updated: 04/14/2025 | Access Level: 3/2953 | Memetic Hazard: Category-3</small></p>
+                </div>
+            </a>
+            
+            <div class="document-info">
+                SCP Foundation Internal Document Server | Secure Access Terminal #87-B<br>
+                User: [Current Credentials] | Location: Site-19 | Security Level: 3
+            </div>
+        </div>
+    </div>
+</body>
+</html>
