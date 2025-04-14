@@ -63,11 +63,13 @@
         }
         
         .scp-entry {
-            margin-bottom: 20px;
-            padding: 15px;
+            margin-bottom: 10px;
+            padding: 0;
             border: 1px solid #ccc;
             background-color: #f9f9f9;
             border-radius: 3px;
+            display: flex;
+            align-items: stretch;
         }
         
         .scp-entry:hover {
@@ -76,37 +78,65 @@
         }
         
         .scp-entry h3 {
-            margin-top: 0;
-            margin-bottom: 10px;
+            margin: 0;
             font-size: 18px;
+            min-width: 100px;
+            padding: 8px 15px;
         }
         
-        .scp-entry p {
-            margin-bottom: 10px;
+        .scp-info {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            padding: 8px 15px;
         }
         
-        .scp-entry .object-class {
-            display: inline-block;
-            padding: 2px 6px;
-            border-radius: 3px;
+        .scp-meta {
+            font-size: 12px;
+            color: #666;
+        }
+        
+        .object-class-box {
+            width: 80px;
+            text-align: center;
+            padding: 8px 0;
             font-size: 12px;
             font-weight: bold;
-            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .hazard-box {
+            background-color: #ffebee;
+            color: #d32f2f;
+            text-align: center;
+            font-weight: bold;
+            font-size: 11px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 15px;
+            border-left: 1px solid #ccc;
+            width: 140px;
         }
         
         .safe {
             background-color: #e8f5e9;
             color: #388e3c;
+            border: 1px solid #c8e6c9;
         }
         
         .keter {
             background-color: #ffebee;
             color: #d32f2f;
+            border: 1px solid #ffcdd2;
         }
         
         .euclid {
             background-color: #fff3e0;
             color: #f57c00;
+            border: 1px solid #ffe0b2;
         }
         
         .document-info {
@@ -161,36 +191,85 @@
             
             <div class="section-title">Available Documents</div>
             
+            <a href="SCP-1300.html">
+                <div class="scp-entry">
+                    <div class="object-class-box keter">KETER</div>
+                    <h3>SCP-1300</h3>
+                    <div class="scp-info">
+                        <span class="scp-meta">Last updated: 04/14/2025 | Access Level: 4/1300</span>
+                    </div>
+                </div>
+            </a>
+            
             <a href="SCP-1870.html">
                 <div class="scp-entry">
-                    <span class="object-class safe">Safe</span>
+                    <div class="object-class-box safe">SAFE</div>
                     <h3>SCP-1870</h3>
-                    <p><small>Last updated: 04/14/2025 | Access Level: 2/1870</small></p>
+                    <div class="scp-info">
+                        <span class="scp-meta">Last updated: 04/14/2025 | Access Level: 2/1870</span>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="SCP-1929.html">
+                <div class="scp-entry">
+                    <div class="object-class-box keter">KETER</div>
+                    <h3>SCP-1929</h3>
+                    <div class="scp-info">
+                        <span class="scp-meta">Last updated: 04/14/2025 | Access Level: 4/1929</span>
+                    </div>
+                    <div class="hazard-box">LINGUISTIC HAZARD<br>CATEGORY-4</div>
+                </div>
+            </a>
+            
+            <a href="SCP-1965.html">
+                <div class="scp-entry">
+                    <div class="object-class-box keter">KETER</div>
+                    <h3>SCP-1965</h3>
+                    <div class="scp-info">
+                        <span class="scp-meta">Last updated: 04/14/2025 | Access Level: 3/1965</span>
+                    </div>
                 </div>
             </a>
             
             <a href="SCP-1991.html">
                 <div class="scp-entry">
-                    <span class="object-class euclid">Euclid</span>
+                    <div class="object-class-box euclid">EUCLID</div>
                     <h3>SCP-1991</h3>
-                    <p><small>Last updated: 04/14/2025 | Access Level: 4/1991</small></p>
+                    <div class="scp-info">
+                        <span class="scp-meta">Last updated: 04/14/2025 | Access Level: 4/1991</span>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="SCP-2112.html">
+                <div class="scp-entry">
+                    <div class="object-class-box euclid">EUCLID</div>
+                    <h3>SCP-2112</h3>
+                    <div class="scp-info">
+                        <span class="scp-meta">Last updated: 04/14/2025 | Access Level: 4/2112</span>
+                    </div>
                 </div>
             </a>
             
             <a href="SCP-2953.html">
                 <div class="scp-entry">
-                    <span class="object-class keter">Keter</span>
+                    <div class="object-class-box keter">KETER</div>
                     <h3>SCP-2953</h3>
-                    <p><small>Last updated: 04/14/2025 | Access Level: 3/2953-CB</small></p>
+                    <div class="scp-info">
+                        <span class="scp-meta">Last updated: 04/14/2025 | Access Level: 3/2953-CB</span>
+                    </div>
                 </div>
             </a>
             
             <a href="SCP-2953-original.html">
-                <div class="scp-entry memetic-warning">
-                    <span class="object-class keter">Keter</span>
+                <div class="scp-entry">
+                    <div class="object-class-box keter">KETER</div>
                     <h3>SCP-2953</h3>
-                    <p><strong>WARNING: MEMETIC HAZARD DETECTED</strong> - Standard document format without countermeasures.</p>
-                    <p><small>Last updated: 04/14/2025 | Access Level: 3/2953 | Memetic Hazard: Category-3</small></p>
+                    <div class="scp-info">
+                        <span class="scp-meta">Last updated: 04/14/2025 | Access Level: 3/2953</span>
+                    </div>
+                    <div class="hazard-box">MEMETIC HAZARD<br>CATEGORY-3</div>
                 </div>
             </a>
             
